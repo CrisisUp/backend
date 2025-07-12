@@ -1,0 +1,76 @@
+# Arquivos de Documentação (se você não quiser que o HELP.md original vá para o Git)
+HELP.md
+
+# Maven e Compilação
+/target/
+pom.xml.tag
+pom.xml.releaseBackup
+pom.xml.versionsBackup
+pom.xml.next
+release.properties
+dependency-reduced-pom.xml
+buildNumber.properties
+.mvn/timing.properties
+.mvn/wrapper/maven-wrapper.jar # Mantenha esta linha para não versionar o wrapper JAR
+
+# IDEs (Ajustado para cobrir a maioria)
+.idea/                 # Pasta de configurações do IntelliJ IDEA
+*.iws                   # Arquivos de workspace do IntelliJ
+*.iml                   # Arquivos de módulo do IntelliJ
+*.ipr                   # Arquivos de projeto do IntelliJ
+.vscode/               # Pasta de configurações do VS Code
+.classpath             # Arquivos de classpath do Eclipse/STS
+.project               # Arquivos de projeto do Eclipse/STS
+.settings/             # Pasta de configurações do Eclipse/STS
+.springBeans            # Arquivos específicos do Spring em IDEs
+.apt_generated          # Arquivos gerados por annotation processors (se houver)
+.factorypath            # Arquivos do Eclipse
+
+# NetBeans (mantido, se for usar)
+/nbproject/private/
+/nbbuild/
+/dist/
+/nbdist/
+/.nb-gradle/
+build/
+# As exclusões !**/src/main/**/build/ e !**/src/test/**/build/ geralmente não são necessárias com /target/
+# e podem complicar, então as removemos.
+
+# Sistema Operacional (MacOS e Windows)
+.DS_Store               # MacOS
+Thumbs.db               # Windows
+
+# Logs
+*.log
+log/
+logs/
+
+# Arquivos Compilados e Empacotados
+*.class
+*.jar
+*.war
+*.ear
+*.zip                   # Exclui todos os arquivos .zip (incluindo o do Initializr)
+*.tar.gz
+*.rar
+
+# Específicos do Spring Boot
+*.bak
+*.tmp
+*.iml                  # Já coberto pelo .idea, mas não faz mal duplicar
+/.settings/            # Já coberto pelo .settings/ acima
+
+# CREDENCIAIS E PROPRIEDADES DE AMBIENTE (CRUCIAL PARA SEGURANÇA)
+# Esta linha ignora o seu application.properties principal para que suas credenciais de banco de dados
+# (usuário, senha, etc.) não sejam enviadas para o GitHub!
+/src/main/resources/application.properties
+
+# Para o caso de ter arquivos de perfil de ambiente (ex: application-dev.properties, application-prod.properties)
+/src/main/resources/application*.properties
+/src/main/resources/application*.yml
+
+# ESPECÍFICO PARA PROBLEMAS DE WSL/WINDOWS ZONE.IDENTIFIER
+# Isso ignora os arquivos de metadados de segurança que o Windows adiciona ao copiar ou descompactar
+*:Zone.Identifier        # Ignora arquivos como 'nome.txt:Zone.Identifier'
+*.cmd:Zone.Identifier    # Ignora 'mvnw.cmd:Zone.Identifier'
+*.sh:Zone.Identifier     # Ignora 'mvnw:Zone.Identifier'
