@@ -1,10 +1,12 @@
 // src/main/java/com/mercadoficticio/backend/model/MovimentacaoFinanceira.java
 package com.mercadoficticio.backend.model;
 
-import jakarta.persistence.*; // IMPORTE ISSO!
+import jakarta.persistence.*;
+import java.time.LocalDate;
 import java.time.LocalDateTime;
+import java.time.LocalDate;
 
-@Entity // <--- ESTA ANOTAÇÃO É OBRIGATÓRIA E DEVE ESTAR AQUI!
+@Entity
 public class MovimentacaoFinanceira {
 
     @Id
@@ -24,6 +26,9 @@ public class MovimentacaoFinanceira {
     @Column(nullable = false)
     private TipoMovimentacao tipo;
 
+    @Column(nullable = false)
+    private LocalDate data;
+
     @Enumerated(EnumType.STRING)
     @Column(nullable = false)
     private CategoriaMovimentacao categoria;
@@ -38,6 +43,7 @@ public class MovimentacaoFinanceira {
         this.descricao = descricao;
         this.valor = valor;
         this.tipo = tipo;
+        this.data = data;
         this.categoria = categoria;
     }
 
@@ -57,6 +63,9 @@ public class MovimentacaoFinanceira {
 
     public TipoMovimentacao getTipo() { return tipo; }
     public void setTipo(TipoMovimentacao tipo) { this.tipo = tipo; }
+
+    public LocalDate getData() { return data; } // <<-- Corrigido para retornar 'this.data'
+    public void setData(LocalDate data) { this.data = data; }
 
     public CategoriaMovimentacao getCategoria() { return categoria; }
     public void setCategoria(CategoriaMovimentacao categoria) { this.categoria = categoria; }
