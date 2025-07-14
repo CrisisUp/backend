@@ -5,21 +5,17 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="508955ee-5f95-4c7a-a44c-01f5320da436" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/dictionaries/project.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/mavenHomeManager.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/mercadoficticio/backend/controller/FluxoDeCaixaController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/mercadoficticio/backend/dto/MovimentacaoFinanceiraRequestDTO.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/mercadoficticio/backend/dto/MovimentacaoFinanceiraResponseDTO.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/mercadoficticio/backend/service/FluxoDeCaixaService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/.gitignore" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/remote-targets.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/remote-targets.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/mercadoficticio/backend/BackendApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/mercadoficticio/backend/BackendApplication.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/mercadoficticio/backend/model/MovimentacaoFinanceira.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/mercadoficticio/backend/model/MovimentacaoFinanceira.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/mercadoficticio/backend/repository/MovimentacaoFinanceiraRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/mercadoficticio/backend/repository/MovimentacaoFinanceiraRepository.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dictionaries/project.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dictionaries/project.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/mercadoficticio/backend/controller/CompraController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/mercadoficticio/backend/controller/CompraController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/mercadoficticio/backend/controller/FluxoDeCaixaController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/mercadoficticio/backend/controller/FluxoDeCaixaController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/mercadoficticio/backend/controller/FornecedorController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/mercadoficticio/backend/controller/FornecedorController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/mercadoficticio/backend/controller/ProdutoController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/mercadoficticio/backend/controller/ProdutoController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/mercadoficticio/backend/controller/VendaController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/mercadoficticio/backend/controller/VendaController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/mercadoficticio/backend/dto/FornecedorRequestDTO.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/mercadoficticio/backend/dto/FornecedorRequestDTO.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/mercadoficticio/backend/dto/FornecedorResponseDTO.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/mercadoficticio/backend/dto/FornecedorResponseDTO.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/mercadoficticio/backend/dto/ItemCompraRequestDTO.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/mercadoficticio/backend/dto/ItemCompraRequestDTO.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/mercadoficticio/backend/model/TipoMovimentacao.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/mercadoficticio/backend/model/TipoMovimentacao.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />

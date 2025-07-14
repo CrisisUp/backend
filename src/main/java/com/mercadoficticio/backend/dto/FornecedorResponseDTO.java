@@ -1,10 +1,6 @@
 // src/main/java/com/mercadoficticio/backend/dto/FornecedorResponseDTO.java
 package com.mercadoficticio.backend.dto;
 
-// REMOVA import lombok.Data;
-// REMOVA import lombok.NoArgsConstructor;
-// REMOVA import lombok.AllArgsConstructor;
-
 public class FornecedorResponseDTO {
     private Long id;
     private String nome;

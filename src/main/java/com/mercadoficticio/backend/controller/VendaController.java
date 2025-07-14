@@ -9,10 +9,12 @@ import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
 
+import org.springframework.web.bind.annotation.CrossOrigin;
 import java.util.List;
 
 @RestController // Indica que esta classe é um controlador REST
 @RequestMapping("/api/vendas") // Define o caminho base para todos os endpoints de venda
+@CrossOrigin(origins = "http://localhost:4200") // ←- ADICIONE ESTA LINHA!
 public class VendaController {
 
     private final VendaService vendaService;

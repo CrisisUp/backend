@@ -8,11 +8,13 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
+import org.springframework.web.bind.annotation.CrossOrigin;
 
 import java.util.List;
 
 @RestController
 @RequestMapping("/api/fornecedores")
+@CrossOrigin(origins = "http://localhost:4200") // ←- ADICIONE ESTA LINHA!
 public class FornecedorController {
 
     private final FornecedorService fornecedorService;
@@ -22,7 +24,7 @@ public class FornecedorController {
         this.fornecedorService = fornecedorService;
     }
 
-    // Endpoint para criar um novo fornecedor (POST /api/fornecedores)
+    // Endpoint para criar um fornecedor (POST /api/fornecedores)
     @PostMapping
     public ResponseEntity<FornecedorResponseDTO> criarFornecedor(@RequestBody FornecedorRequestDTO requestDTO) {
         try {
@@ -33,7 +35,7 @@ public class FornecedorController {
             // Futuramente, você pode retornar e.getMessage() para dar mais detalhes ao frontend.
             return new ResponseEntity<>(HttpStatus.CONFLICT); // 409 Conflict
         }
-        // REMOVIDO: catch (Exception e) { return new ResponseEntity<>(HttpStatus.INTERNAL_SERVER_ERROR); }
+        // REMOVIDO: catch (Exception e) {return new ResponseEntity<>(HttpStatus.INTERNAL_SERVER_ERROR);}
         // Outras exceções não capturadas aqui serão tratadas por um Global Exception Handler (que podemos criar depois)
     }
 

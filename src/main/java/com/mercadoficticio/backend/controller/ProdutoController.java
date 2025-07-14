@@ -13,6 +13,7 @@ import java.util.List;
 
 @RestController
 @RequestMapping("/api/produtos") // Define o caminho base para todos os endpoints de produto
+@CrossOrigin(origins = "http://localhost:4200") // <--- ADICIONE ESTA LINHA!
 public class ProdutoController {
 
     private final ProdutoService produtoService;

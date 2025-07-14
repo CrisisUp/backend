@@ -10,9 +10,11 @@ import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
 
 import java.util.List;
+import org.springframework.web.bind.annotation.CrossOrigin; // ←- IMPORTE ESTA LINHA SE AINDA NÃO ESTIVER!
 
 @RestController
 @RequestMapping("/api/compras") // Define o caminho base para todos os endpoints de compra
+@CrossOrigin(origins = "http://localhost:4200") // ←- ADICIONE ESTA LINHA!
 public class CompraController {
 
     private final CompraService compraService;
